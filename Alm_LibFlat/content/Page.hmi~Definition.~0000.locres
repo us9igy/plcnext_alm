@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourcesDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NextResourceID>120</NextResourceID>
+  <Languages ID="0" Name="Default" />
+  <Resources ID="100" Name="Button1.Text">
+    <Values LanguageID="0" LocalValue="1" />
+  </Resources>
+  <Resources ID="101" Name="Button2.Text">
+    <Values LanguageID="0" LocalValue="2" />
+  </Resources>
+  <Resources ID="102" Name="Button3.Text">
+    <Values LanguageID="0" LocalValue="3" />
+  </Resources>
+  <Resources ID="103" Name="Button4.Text">
+    <Values LanguageID="0" LocalValue="4" />
+  </Resources>
+  <Resources ID="104" Name="Button5.Text">
+    <Values LanguageID="0" LocalValue="5" />
+  </Resources>
+  <Resources ID="105" Name="Button6.Text">
+    <Values LanguageID="0" LocalValue="6" />
+  </Resources>
+  <Resources ID="106" Name="Button7.Text">
+    <Values LanguageID="0" LocalValue="7" />
+  </Resources>
+  <Resources ID="107" Name="Button8.Text">
+    <Values LanguageID="0" LocalValue="8" />
+  </Resources>
+  <Resources ID="108" Name="Button9.Text">
+    <Values LanguageID="0" LocalValue="9" />
+  </Resources>
+  <Resources ID="109" Name="Button10.Text">
+    <Values LanguageID="0" LocalValue="10" />
+  </Resources>
+  <Resources ID="110" Name="Button11.Text">
+    <Values LanguageID="0" LocalValue="11" />
+  </Resources>
+  <Resources ID="111" Name="Button12.Text">
+    <Values LanguageID="0" LocalValue="12" />
+  </Resources>
+  <Resources ID="112" Name="Button13.Text">
+    <Values LanguageID="0" LocalValue="13" />
+  </Resources>
+  <Resources ID="113" Name="Button14.Text">
+    <Values LanguageID="0" LocalValue="14" />
+  </Resources>
+  <Resources ID="114" Name="Button15.Text">
+    <Values LanguageID="0" LocalValue="15" />
+  </Resources>
+  <Resources ID="115" Name="Button16.Text">
+    <Values LanguageID="0" LocalValue="16" />
+  </Resources>
+  <Resources ID="116" Name="Button17.Text">
+    <Values LanguageID="0" LocalValue="17" />
+  </Resources>
+  <Resources ID="117" Name="Button18.Text">
+    <Values LanguageID="0" LocalValue="18" />
+  </Resources>
+  <Resources ID="118" Name="Button19.Text">
+    <Values LanguageID="0" LocalValue="19" />
+  </Resources>
+  <Resources ID="119" Name="Button20.Text">
+    <Values LanguageID="0" LocalValue="20" />
+  </Resources>
+</ResourcesDocument>

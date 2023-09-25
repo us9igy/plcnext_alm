@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HmiConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" IsLocalInitialized="false" IsShowGrid="false" IsSnapToGrid="false" SnapToGridCellSize="50" SnapToGridLineColor="Fuchsia" GeneratorRunCounter="0">
+  <Name>HMI Configuration</Name>
+  <RecentlyUsedColors />
+  <RecentlyUsedGradients />
+  <ImageLocation>C:\Users\ArturK\Pictures</ImageLocation>
+  <HmiSupportLocation>C:\Users\ArturK\Documents</HmiSupportLocation>
+  <RotationRounding>15</RotationRounding>
+</HmiConfiguration>

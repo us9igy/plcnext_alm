@@ -1,0 +1,16 @@
+TYPE
+
+    ALM                 : STRUCT
+        iAlmNum         : INT;
+        wsREFE          : WSTRING;
+        xAlmFlag        : BOOL;
+        xAlmLastFlag    : BOOL;        
+        iSevirity       : INT;
+        wstrALMText     : WSTRING;
+        sTime           : STRING;
+    END_STRUCT;
+
+    ALM_ARR:   ARRAY[1..200] OF ALM;
+    ALM_LST:   ARRAY[1..25]  OF ALM;
+ 
+END_TYPE

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content>
+  <file_system name="Safety" id="Safety~0000" />
+  <file name="StorageProperties.xml" id="StorageProperties~0000.xml" />
+  <file name="StorageContent.xml" id="StorageContent~0000.xml" />
+  <folder name="PROJECT">
+    <file name="PROJECT.proj" id="PROJECT~PROJECT~0000.proj" />
+    <folder name="Hardware">
+      <file name="Description.html" id="Hardware~Description~0000.html" />
+      <file name="fb524274-8858-4264-a20a-03627a289298.DataLink" id="Hardware~fb524274-88~0000.DataLink" />
+      <file name="fb524274-8858-4264-a20a-03627a289298.projset" id="Hardware~fb524274-88~0001.projset" />
+      <file name="fb524274-8858-4264-a20a-03627a289298.Transport" id="Hardware~fb524274-88~0002.Transport" />
+      <file name="VersionHistory.usermeta" id="Hardware~VersionHist~0000.usermeta" />
+      <folder name="CFG_74949BDD1B224164BF4D5860443A6859">
+        <file name="1c0f4fbe-7bad-49ad-9309-191bf6c4542a.ds" id="CFG_74949~1c0f4fbe-7~0000.ds" />
+        <file name="DataList.dl" id="CFG_74949BD~DataList~0000.dl" />
+        <file name="PlmConfiguration.plmc" id="CFG_74949~PlmConfigu~0000.plmc" />
+        <folder name="AXLF_Master">
+          <file name="Arp.Io.Axl.ControllerComponent.compmeta" id="AXLF_Mast~Arp.Io.Axl~0000.compmeta" />
+          <file name="Arp.Io.Axl.libmeta" id="AXLF_Mast~Arp.Io.Axl~0001.libmeta" />
+        </folder>
+        <folder name="EIP_Master">
+          <file name="Arp.Io.EthernetIP.libmeta" id="EIP_Maste~Arp.Io.Eth~0000.libmeta" />
+          <file name="ControllerComponent.compmeta" id="EIP_Maste~Controller~0000.compmeta" />
+        </folder>
+        <folder name="HMI_Server">
+          <file name="DataList.dlr4hmi" id="HMI_Server~DataList~0000.dlr4hmi" />
+          <file name="HmiConfiguration.xml" id="HMI_Serve~HmiConfigu~0000.xml" />
+          <folder name="Application">
+            <file name="Navigation.hminav" id="Applicati~Navigation~0000.hminav" />
+            <file name="Variables.hmivar" id="Applicatio~Variables~0000.hmivar" />
+            <folder name="Page.hmi">
+              <file name="Variables.hmivar" id="Page.hmi~Variables~0000.hmivar" />
+              <file name="Definition.hmipagedef" id="Page.hmi~Definition~0000.hmipagedef" />
+              <file name="Parameters.hmiparams" id="Page.hmi~Parameters~0000.hmiparams" />
+              <file name="Definition.hmipagedef.locres" id="Page.hmi~Definition.~0000.locres" />
+            </folder>
+          </folder>
+        </folder>
+        <folder name="IB_Master">
+          <file name="Arp.Io.Ib.ControllerComponent.compmeta" id="IB_Master~Arp.Io.Ib.~0000.compmeta" />
+          <file name="Arp.Io.Ib.libmeta" id="IB_Master~Arp.Io.Ib~0000.libmeta" />
+        </folder>
+        <folder name="PLCnext">
+          <file name="EsmConfiguration.esmc" id="PLCnext~EsmConfigura~0000.esmc" />
+        </folder>
+        <folder name="PN_Master">
+          <file name="Arp.Io.Pn.libmeta" id="PN_Master~Arp.Io.Pn~0000.libmeta" />
+          <file name="ControllerComponent.compmeta" id="PN_Master~Controller~0000.compmeta" />
+        </folder>
+        <folder name="RES_C5F0101E7D9342A28C18EE3FBD4DC15C">
+          <file name="Arp.Plc.Eclr.libmeta" id="RES_C5F01~Arp.Plc.Ec~0000.libmeta" />
+          <file name="DataList.dlr4var" id="RES_C5F0101~DataList~0000.dlr4var" />
+          <file name="EclrComponent.compmeta" id="RES_C5F01~EclrCompon~0000.compmeta" />
+          <file name="GlobalVariables.var" id="RES_C5F01~GlobalVari~0000.var" />
+          <file name="IOConfiguration.ioc" id="RES_C5F01~IOConfigur~0000.ioc" />
+          <file name="ResourceSettings.set" id="RES_C5F01~ResourceSe~0000.set" />
+        </folder>
+      </folder>
+    </folder>
+    <folder name="Logical Elements">
+      <file name="GeneratedDataTypes.dt" id="Logical E~GeneratedD~0000.dt" />
+      <file name="Alarms.dt" id="Logical Eleme~Alarms~0000.dt" />
+      <folder name="HelpTemplate">
+        <file name="collapse_toggle.png" id="HelpTempl~collapse_t~0000.png" />
+        <file name="image.png" id="HelpTemplate~image~0000.png" />
+        <file name="Styles.css" id="HelpTemplate~Styles~0000.css" />
+        <file name="TemplateFunction.htm" id="HelpTempl~TemplateFu~0000.htm" />
+        <file name="TemplateFunctionBlock.htm" id="HelpTempl~TemplateFu~0001.htm" />
+      </folder>
+      <folder name="Main.pou">
+        <file name="Description.html" id="Main.pou~Description~0000.html" />
+        <file name="Description.rtf" id="Main.pou~Description~0001.rtf" />
+        <file name="Metadata.meta" id="Main.pou~Metadata~0000.meta" />
+        <file name="User.locres" id="Main.pou~User~0000.locres" />
+        <file name="Variables.var" id="Main.pou~Variables~0000.var" />
+        <file name="Variables.var.locres" id="Main.pou~Variables.v~0000.locres" />
+        <file name="VersionHistory.usermeta" id="Main.pou~VersionHist~0000.usermeta" />
+        <file name="Code.ld" id="Main.pou~Code~0000.ld" />
+        <file name="Code.ld.locres" id="Main.pou~Code.ld~0000.locres" />
+        <file name="Alm_txt.st" id="Main.pou~Alm_txt~0000.st" />
+        <file name="ALM_data.st" id="Main.pou~ALM_data~0000.st" />
+      </folder>
+      <folder name="Alarms.pou">
+        <file name="Metadata.meta" id="Alarms.pou~Metadata~0000.meta" />
+        <file name="Variables.var" id="Alarms.pou~Variables~0000.var" />
+        <file name="VersionHistory.usermeta" id="Alarms.po~VersionHis~0000.usermeta" />
+        <file name="Description.html" id="Alarms.po~Descriptio~0000.html" />
+        <file name="Description.rtf" id="Alarms.po~Descriptio~0001.rtf" />
+        <file name="Variables.var.locres" id="Alarms.po~Variables.~0000.locres" />
+        <file name="Code.st" id="Alarms.pou~Code~0000.st" />
+      </folder>
+      <folder name="Log25Line.hmisymbol">
+        <file name="Definition" id="Log25Line~Definition~0000" />
+        <file name="Parameters" id="Log25Line~Parameters~0000" />
+        <file name="Thumbnail" id="Log25Line.~Thumbnail~0000" />
+        <file name="Definition.locres" id="Log25Line~Definition~0001.locres" />
+        <file name="Variables.hmivar" id="Log25Line.~Variables~0000.hmivar" />
+        <file name="VersionHistory.usermeta" id="Log25Line~VersionHis~0000.usermeta" />
+        <file name="Description.html" id="Log25Line~Descriptio~0000.html" />
+      </folder>
+      <folder name="HMI Symbol.hmisymbol">
+        <file name="Variables.hmivar" id="HMI Symbol~Variables~0000.hmivar" />
+        <file name="VersionHistory.usermeta" id="HMI Symbo~VersionHis~0000.usermeta" />
+        <file name="Description.html" id="HMI Symbo~Descriptio~0000.html" />
+        <file name="Definition.locres" id="HMI Symbo~Definition~0000.locres" />
+        <file name="Definition" id="HMI Symbo~Definition~0001" />
+        <file name="Parameters" id="HMI Symbo~Parameters~0000" />
+        <file name="Thumbnail" id="HMI Symbol~Thumbnail~0000" />
+      </folder>
+    </folder>
+    <folder name="RecycleBin">
+      <folder name="02514c91-72c0-487b-8cb7-1d0b81f58c92">
+        <file name="02514c91-72c0-487b-8cb7-1d0b81f58c92" id="02514c91-~02514c91-7~0000" />
+        <folder name="Login.hmi">
+          <file name="Definition.hmipagedef" id="Login.hmi~Definition~0000.hmipagedef" />
+          <file name="Parameters.hmiparams" id="Login.hmi~Parameters~0000.hmiparams" />
+          <file name="Definition.hmipagedef.locres" id="Login.hmi~Definition~0001.locres" />
+          <file name="Variables.hmivar" id="Login.hmi~Variables~0000.hmivar" />
+        </folder>
+      </folder>
+    </folder>
+  </folder>
+</content>

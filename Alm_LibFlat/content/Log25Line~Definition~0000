@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Symbol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Log25Line">
+  <Objects>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text25" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>0</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>0</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM1].sTime, " ", ALM_LST[iALM1].wstrALMText, " ", ALM_LST[iALM1].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM1].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM1].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q1="http://www.w3.org/2001/XMLSchema" xsi:type="q1:double">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q2="http://www.w3.org/2001/XMLSchema" xsi:type="q2:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q3="http://www.w3.org/2001/XMLSchema" xsi:type="q3:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text20" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>-2.8421709430404007E-14</X>
+        <Y>0</Y>
+      </Origin>
+      <Location>
+        <X>-2.8421709430404007E-14</X>
+        <Y>0</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM1</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM1</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text1" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>28</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>28</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM2].sTime, " ", ALM_LST[iALM2].wstrALMText, " ", ALM_LST[iALM2].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM2].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM2].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q4="http://www.w3.org/2001/XMLSchema" xsi:type="q4:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q5="http://www.w3.org/2001/XMLSchema" xsi:type="q5:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q6="http://www.w3.org/2001/XMLSchema" xsi:type="q6:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text2" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>28</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>28</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM2</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM2</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text3" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>56</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>56</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM3].sTime, " ", ALM_LST[iALM3].wstrALMText, " ", ALM_LST[iALM3].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM3].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM3].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q7="http://www.w3.org/2001/XMLSchema" xsi:type="q7:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q8="http://www.w3.org/2001/XMLSchema" xsi:type="q8:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q9="http://www.w3.org/2001/XMLSchema" xsi:type="q9:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text4" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>-2.8421709430404007E-14</X>
+        <Y>56</Y>
+      </Origin>
+      <Location>
+        <X>-2.8421709430404007E-14</X>
+        <Y>56</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM3</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM3</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text5" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>84</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>84</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM4].sTime, " ", ALM_LST[iALM4].wstrALMText, " ", ALM_LST[iALM4].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM4].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM4].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q10="http://www.w3.org/2001/XMLSchema" xsi:type="q10:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q11="http://www.w3.org/2001/XMLSchema" xsi:type="q11:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q12="http://www.w3.org/2001/XMLSchema" xsi:type="q12:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text6" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>84</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>84</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM4</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM4</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text7" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>112</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>112</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM5].sTime, " ", ALM_LST[iALM5].wstrALMText, " ", ALM_LST[iALM5].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM5].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM5].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q13="http://www.w3.org/2001/XMLSchema" xsi:type="q13:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q14="http://www.w3.org/2001/XMLSchema" xsi:type="q14:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q15="http://www.w3.org/2001/XMLSchema" xsi:type="q15:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text8" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>112</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>112</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM5</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM5</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text9" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>140</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>140</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM6].sTime, " ", ALM_LST[iALM6].wstrALMText, " ", ALM_LST[iALM6].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM6].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM6].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q16="http://www.w3.org/2001/XMLSchema" xsi:type="q16:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q17="http://www.w3.org/2001/XMLSchema" xsi:type="q17:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q18="http://www.w3.org/2001/XMLSchema" xsi:type="q18:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text10" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>140</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>140</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM6</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM6</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text11" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>168</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>168</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM7].sTime, " ", ALM_LST[iALM7].wstrALMText, " ", ALM_LST[iALM7].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM7].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM7].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q19="http://www.w3.org/2001/XMLSchema" xsi:type="q19:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q20="http://www.w3.org/2001/XMLSchema" xsi:type="q20:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q21="http://www.w3.org/2001/XMLSchema" xsi:type="q21:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text12" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>168</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>168</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM7</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM7</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text13" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>196</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>196</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM8].sTime, " ", ALM_LST[iALM8].wstrALMText, " ", ALM_LST[iALM8].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM8].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM8].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q22="http://www.w3.org/2001/XMLSchema" xsi:type="q22:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q23="http://www.w3.org/2001/XMLSchema" xsi:type="q23:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q24="http://www.w3.org/2001/XMLSchema" xsi:type="q24:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text14" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>196</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>196</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM8</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM8</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text15" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>224</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>224</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM9].sTime, " ", ALM_LST[iALM9].wstrALMText, " ", ALM_LST[iALM9].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM9].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM9].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q25="http://www.w3.org/2001/XMLSchema" xsi:type="q25:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q26="http://www.w3.org/2001/XMLSchema" xsi:type="q26:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q27="http://www.w3.org/2001/XMLSchema" xsi:type="q27:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text16" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>-2.8421709430404007E-14</X>
+        <Y>224</Y>
+      </Origin>
+      <Location>
+        <X>-2.8421709430404007E-14</X>
+        <Y>224</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM9</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM9</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text17" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>252</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>252</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM10].sTime, " ", ALM_LST[iALM10].wstrALMText, " ", ALM_LST[iALM10].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM10].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM10].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q28="http://www.w3.org/2001/XMLSchema" xsi:type="q28:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q29="http://www.w3.org/2001/XMLSchema" xsi:type="q29:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q30="http://www.w3.org/2001/XMLSchema" xsi:type="q30:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text18" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>252</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>252</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM10</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM10</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text19" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>280</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>280</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM11].sTime, " ", ALM_LST[iALM11].wstrALMText, " ", ALM_LST[iALM11].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM11].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM11].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q31="http://www.w3.org/2001/XMLSchema" xsi:type="q31:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q32="http://www.w3.org/2001/XMLSchema" xsi:type="q32:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q33="http://www.w3.org/2001/XMLSchema" xsi:type="q33:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text21" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>-2.8421709430404007E-14</X>
+        <Y>280</Y>
+      </Origin>
+      <Location>
+        <X>-2.8421709430404007E-14</X>
+        <Y>280</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM11</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM11</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text22" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>308</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>308</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM12].sTime, " ", ALM_LST[iALM12].wstrALMText, " ", ALM_LST[iALM12].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM12].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM12].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q34="http://www.w3.org/2001/XMLSchema" xsi:type="q34:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q35="http://www.w3.org/2001/XMLSchema" xsi:type="q35:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q36="http://www.w3.org/2001/XMLSchema" xsi:type="q36:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text23" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>308</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>308</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM12</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM12</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text24" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>336</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>336</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM13].sTime, " ", ALM_LST[iALM13].wstrALMText, " ", ALM_LST[iALM13].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM13].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM13].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q37="http://www.w3.org/2001/XMLSchema" xsi:type="q37:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q38="http://www.w3.org/2001/XMLSchema" xsi:type="q38:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q39="http://www.w3.org/2001/XMLSchema" xsi:type="q39:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text26" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>336</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>336</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM13</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM13</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text27" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>364</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>364</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM14].sTime, " ", ALM_LST[iALM14].wstrALMText, " ", ALM_LST[iALM14].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM14].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM14].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q40="http://www.w3.org/2001/XMLSchema" xsi:type="q40:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q41="http://www.w3.org/2001/XMLSchema" xsi:type="q41:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q42="http://www.w3.org/2001/XMLSchema" xsi:type="q42:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text28" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>364</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>364</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM14</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM14</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text29" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>392</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>392</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM15].sTime, " ", ALM_LST[iALM15].wstrALMText, " ", ALM_LST[iALM15].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM15].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM15].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q43="http://www.w3.org/2001/XMLSchema" xsi:type="q43:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q44="http://www.w3.org/2001/XMLSchema" xsi:type="q44:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q45="http://www.w3.org/2001/XMLSchema" xsi:type="q45:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text30" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>392</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>392</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM15</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM15</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text31" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>420</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>420</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM16].sTime, " ", ALM_LST[iALM16].wstrALMText, " ", ALM_LST[iALM16].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM16].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM16].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q46="http://www.w3.org/2001/XMLSchema" xsi:type="q46:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q47="http://www.w3.org/2001/XMLSchema" xsi:type="q47:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q48="http://www.w3.org/2001/XMLSchema" xsi:type="q48:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text32" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>420</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>420</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM16</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM16</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text33" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>448</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>448</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM17].sTime, " ", ALM_LST[iALM17].wstrALMText, " ", ALM_LST[iALM17].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM17].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM17].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q49="http://www.w3.org/2001/XMLSchema" xsi:type="q49:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q50="http://www.w3.org/2001/XMLSchema" xsi:type="q50:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q51="http://www.w3.org/2001/XMLSchema" xsi:type="q51:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text34" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>448</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>448</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM17</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM17</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text35" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>476</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>476</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM18].sTime, " ", ALM_LST[iALM18].wstrALMText, " ", ALM_LST[iALM18].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM18].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM18].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q52="http://www.w3.org/2001/XMLSchema" xsi:type="q52:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q53="http://www.w3.org/2001/XMLSchema" xsi:type="q53:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q54="http://www.w3.org/2001/XMLSchema" xsi:type="q54:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text36" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>476</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>476</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM18</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM18</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text37" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>504</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>504</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM19].sTime, " ", ALM_LST[iALM19].wstrALMText, " ", ALM_LST[iALM19].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM19].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM19].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q55="http://www.w3.org/2001/XMLSchema" xsi:type="q55:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q56="http://www.w3.org/2001/XMLSchema" xsi:type="q56:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q57="http://www.w3.org/2001/XMLSchema" xsi:type="q57:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text38" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>504</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>504</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM19</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM19</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text39" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>532</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>532</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM20].sTime, " ", ALM_LST[iALM20].wstrALMText, " ", ALM_LST[iALM20].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM20].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM20].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q58="http://www.w3.org/2001/XMLSchema" xsi:type="q58:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q59="http://www.w3.org/2001/XMLSchema" xsi:type="q59:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q60="http://www.w3.org/2001/XMLSchema" xsi:type="q60:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text40" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>532</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>532</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM20</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM20</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text41" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>560</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>560</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM16].sTime, " ", ALM_LST[iALM21].wstrALMText, " ", ALM_LST[iALM21].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM21].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM21].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q61="http://www.w3.org/2001/XMLSchema" xsi:type="q61:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q62="http://www.w3.org/2001/XMLSchema" xsi:type="q62:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q63="http://www.w3.org/2001/XMLSchema" xsi:type="q63:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text42" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>560</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>560</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM21</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM21</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text43" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>588</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>588</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM17].sTime, " ", ALM_LST[iALM22].wstrALMText, " ", ALM_LST[iALM22].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM22].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM22].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q64="http://www.w3.org/2001/XMLSchema" xsi:type="q64:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q65="http://www.w3.org/2001/XMLSchema" xsi:type="q65:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q66="http://www.w3.org/2001/XMLSchema" xsi:type="q66:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text44" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>588</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>588</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM22</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM22</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text45" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>616</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>616</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM18].sTime, " ", ALM_LST[iALM23].wstrALMText, " ", ALM_LST[iALM23].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM23].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM23].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q67="http://www.w3.org/2001/XMLSchema" xsi:type="q67:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q68="http://www.w3.org/2001/XMLSchema" xsi:type="q68:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q69="http://www.w3.org/2001/XMLSchema" xsi:type="q69:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text46" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>616</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>616</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM23</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM23</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text47" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>644</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>644</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM19].sTime, " ", ALM_LST[iALM24].wstrALMText, " ", ALM_LST[iALM24].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM24].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM24].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q70="http://www.w3.org/2001/XMLSchema" xsi:type="q70:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q71="http://www.w3.org/2001/XMLSchema" xsi:type="q71:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q72="http://www.w3.org/2001/XMLSchema" xsi:type="q72:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text48" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>644</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>644</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM24</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM24</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text49" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Left" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="5" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>49</X>
+        <Y>672</Y>
+      </Origin>
+      <Location>
+        <X>49</X>
+        <Y>672</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" TargetProperty="Text">
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>concat(ALM_LST[iALM20].sTime, " ", ALM_LST[iALM25].wstrALMText, " ", ALM_LST[iALM25].wsREFE)</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <Dynamic xsi:type="FillDynamic" TargetProperty="FontColor" Interpolate="false" Rate="None">
+        <VariableInstance>
+          <Name>ALM_LST</Name>
+          <Suffix>[iALM25].iSevirity</Suffix>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>ALM_LST[iALM25].iSevirity</ExpressionLine>
+        </Expression>
+        <ThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q73="http://www.w3.org/2001/XMLSchema" xsi:type="q73:int">1</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFECEDED" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q74="http://www.w3.org/2001/XMLSchema" xsi:type="q74:double">2</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFFD700" />
+          </FillDynamicThresholdData>
+          <FillDynamicThresholdData Blink="false">
+            <Threshold xmlns:q75="http://www.w3.org/2001/XMLSchema" xsi:type="q75:double">3</Threshold>
+            <Value xsi:type="SolidFill" Color="#FFFF5050" />
+          </FillDynamicThresholdData>
+        </ThresholdData>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>1000</Width>
+        <Height>25</Height>
+      </Size>
+    </HmiObject>
+    <HmiObject xsi:type="HmiText" Rotation="0" ID="Text50" IsTabSelectable="true" TabOrder="0" LineColor="#FFCCD0D2" LineWidth="0" Text="Alarm text and details" FontFamily="Arial" FontSize="18" FontStyle="normal" FontWeight="400" FontColor="#FFECEDED" IsTextWrapping="false" TextDirection="LeftToRight" HorizontalTextAlignment="Center" GuiStyle="Flat" TextMarginTop="3" TextMarginBottom="0" TextMarginLeft="0" TextMarginRight="0" TextWrapping="WrapWithOverflow">
+      <Origin>
+        <X>0</X>
+        <Y>672</Y>
+      </Origin>
+      <Location>
+        <X>0</X>
+        <Y>672</Y>
+      </Location>
+      <TransformCenter>
+        <X>0</X>
+        <Y>0</Y>
+      </TransformCenter>
+      <Dynamic xsi:type="TextDynamic" Format="fixed0" TargetProperty="Text">
+        <VariableInstance>
+          <Name>iALM25</Name>
+        </VariableInstance>
+        <Expression xsi:type="SimpleSTExpression">
+          <ExpressionLine>iALM25</ExpressionLine>
+        </Expression>
+      </Dynamic>
+      <EnableSecurityScope>Always</EnableSecurityScope>
+      <EnableSecurityScopeOperator>Equal</EnableSecurityScopeOperator>
+      <EnableSecurityScopeLevel>0</EnableSecurityScopeLevel>
+      <VisibleSecurityScope>Always</VisibleSecurityScope>
+      <VisibleSecurityScopeOperator>Equal</VisibleSecurityScopeOperator>
+      <VisibleSecurityScopeLevel>0</VisibleSecurityScopeLevel>
+      <Fill xsi:type="SolidFill" Color="#FF3E3D40" />
+      <DashStyle>
+        <Offset>0</Offset>
+        <Dashes />
+      </DashStyle>
+      <Size>
+        <Width>45</Width>
+        <Height>25.000000000000011</Height>
+      </Size>
+    </HmiObject>
+  </Objects>
+</Symbol>

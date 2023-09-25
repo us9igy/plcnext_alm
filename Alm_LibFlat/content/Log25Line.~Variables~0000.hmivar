@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HmiVariables>
+  <UserDefined>
+    <Variable Name="iALM1" DataType="INT" InitValue="1" IsReadOnly="false" Id="96a932a2-29fc-4f24-86f7-3aac3b84b053" />
+    <Variable Name="iALM2" DataType="INT" InitValue="2" IsReadOnly="false" Id="813e8a74-c393-4d94-8fc5-80a878bf09ed" />
+    <Variable Name="iALM3" DataType="INT" InitValue="3" IsReadOnly="false" Id="d24ef370-e101-42f9-b5a5-f7acbb5c3874" />
+    <Variable Name="iALM4" DataType="INT" InitValue="4" IsReadOnly="false" Id="1b2f85ee-a63e-4c90-ba0c-bd66a61f10f5" />
+    <Variable Name="iALM5" DataType="INT" InitValue="5" IsReadOnly="false" Id="6f44cdf1-b983-4cea-942c-ee0d0a6c1f47" />
+    <Variable Name="iALM6" DataType="INT" InitValue="6" IsReadOnly="false" Id="bd7f481c-a899-4ac3-bc04-4fcc9b426410" />
+    <Variable Name="iALM7" DataType="INT" InitValue="7" IsReadOnly="false" Id="484c5e2f-73c8-4aa2-ad48-349aece0123d" />
+    <Variable Name="iALM8" DataType="INT" InitValue="8" IsReadOnly="false" Id="ad5a6e3d-aa3f-4223-8ed0-86f31fcf51e4" />
+    <Variable Name="iALM9" DataType="INT" InitValue="9" IsReadOnly="false" Id="df5fad94-46cb-49b3-8f70-2df8795b8047" />
+    <Variable Name="iALM10" DataType="INT" InitValue="10" IsReadOnly="false" Id="773751cb-efb5-4400-8927-ecb83f4738ca" />
+    <Variable Name="iALM11" DataType="INT" InitValue="11" IsReadOnly="false" Id="c0f666b7-7c84-4c94-9693-ea7dc5ebae3f" />
+    <Variable Name="iALM12" DataType="INT" InitValue="12" IsReadOnly="false" Id="f3fd2dd7-f0a5-4cc8-9186-77e2cd9bbb16" />
+    <Variable Name="iALM13" DataType="INT" InitValue="13" IsReadOnly="false" Id="508a6859-ec54-4ca2-85cb-0aea74144237" />
+    <Variable Name="iALM14" DataType="INT" InitValue="14" IsReadOnly="false" Id="d1c50c23-68b1-4364-bfc5-c48ea8d76a1d" />
+    <Variable Name="iALM15" DataType="INT" InitValue="15" IsReadOnly="false" Id="b983dea4-8bc9-4217-af76-ef95f3540143" />
+    <Variable Name="iALM16" DataType="INT" InitValue="16" IsReadOnly="false" Id="26572fdb-3d3a-4d81-a558-360578f7e080" />
+    <Variable Name="iALM17" DataType="INT" InitValue="17" IsReadOnly="false" Id="d94fde04-7544-4d9f-b289-2bdb1a49791b" />
+    <Variable Name="iALM18" DataType="INT" InitValue="18" IsReadOnly="false" Id="92aaf589-dc25-4243-993c-786bce5be026" />
+    <Variable Name="iALM19" DataType="INT" InitValue="19" IsReadOnly="false" Id="f2a262b4-325e-4746-8c43-ec2d064e1a35" />
+    <Variable Name="iALM20" DataType="INT" InitValue="20" IsReadOnly="false" Id="a7634967-8308-4ded-bd48-886b4767baa5" />
+    <Variable Name="iALM21" DataType="INT" InitValue="21" IsReadOnly="false" Id="859e54ef-c703-49a4-b044-db4f464d2774" />
+    <Variable Name="iALM22" DataType="INT" InitValue="22" IsReadOnly="false" Id="e83886b4-d473-48f6-bfca-258dbd30989c" />
+    <Variable Name="iALM23" DataType="INT" InitValue="23" IsReadOnly="false" Id="bd4ca8d1-dfd6-40f4-b4bf-c4eba8ce6fd1" />
+    <Variable Name="iALM24" DataType="INT" InitValue="24" IsReadOnly="false" Id="6cae5f1b-b18f-4cf5-85cf-b3b9352241b5" />
+    <Variable Name="iALM25" DataType="INT" InitValue="25" IsReadOnly="false" Id="cf94243c-d3e6-4e60-96d5-8449a5fbd249" />
+  </UserDefined>
+</HmiVariables>

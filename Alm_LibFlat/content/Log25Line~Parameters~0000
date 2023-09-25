@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolParameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Parameters Name="ALM_LST" Id="bf27a92e-3554-48f5-9ab5-634b9b2e0a46" Type="AnyUDT" Comment="">
+    <Udt>ALM_LST</Udt>
+  </Parameters>
+</SymbolParameters>

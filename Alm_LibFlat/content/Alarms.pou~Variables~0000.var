@@ -1,0 +1,28 @@
+{ CustomGroupDefinition('e3526e1c-1947-4bc6-a3f2-75c97ad07e8d', 'Input') }
+{ CustomGroupDefinition('9ad658ff-c2c5-4c33-8e35-99f2d94139b0', 'Output') }
+{ CustomGroupDefinition('9cd9e666-0137-4977-acd5-a0cfb48c5a27', 'InOut') }
+{ CustomGroupDefinition('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24', 'Local') }
+
+VAR_INPUT
+    xEN : BOOL { CustomGroupReference('e3526e1c-1947-4bc6-a3f2-75c97ad07e8d') } {Id('dda0f66c-d87a-4d81-a762-094593b2fd7b')};
+    sDT : STRING { CustomGroupReference('e3526e1c-1947-4bc6-a3f2-75c97ad07e8d') } {Id('1b730fc7-6115-49c1-85b6-5ea9a1f39a27')};
+END_VAR
+
+VAR_OUTPUT
+    udtALMLST : ALM_LST { CustomGroupReference('9ad658ff-c2c5-4c33-8e35-99f2d94139b0') } {Id('73dda59f-40d3-493d-99cc-2b4a7f733e1c')};
+END_VAR
+
+VAR_IN_OUT
+    udtALM : ALM_ARR { CustomGroupReference('9cd9e666-0137-4977-acd5-a0cfb48c5a27') } {Id('827a1e8f-c22c-4a63-88cb-d544c11b9527')};
+END_VAR
+
+VAR
+    xFirstRun : BOOL { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('df8bda24-abbe-456e-9141-534a5f70ce30')};
+    iAlmCnt : INT { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('9e9eb864-78a9-4a74-96f5-613b235480ac')};
+    i : INT { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('8ee49070-7d5f-49c6-baae-de46ed79fc45')};
+    iCount : INT { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('ebaae454-2f9c-4da2-87b4-36b2944966da')};
+    xStrExists : BOOL { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('5fc8241f-6787-436c-848b-89def7960639')};
+    xREDetected : BOOL { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('4c09f56c-4c7a-4e61-87ad-c70e53841b5d')};
+    xFEDetected : BOOL { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('3238c7f7-0032-41e9-a5d0-d4ea7f42920d')};
+    iState : INT { CustomGroupReference('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24') } {Id('ccb9fb02-fac0-4460-8eef-97ae111d8ca4')};
+END_VAR

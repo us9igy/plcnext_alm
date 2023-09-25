@@ -1,0 +1,29 @@
+{ CustomGroupDefinition('a04e0da4-75a3-431c-a769-2ffcda83b779', '') }
+
+VAR
+    Alarms1 : Alarms { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('28dd23ae-5a0a-4f09-887b-e6e622eab75b')};
+    udtALM : ALM_ARR { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('5288cbd1-c8e1-480a-85e0-a1fa3415626c')};
+    udtALMLST : ALM_LST { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('2bbba919-7e03-487f-87b8-3ff89bb4fc8d')};
+    sDT : STRING { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('9b8268a8-4140-41a0-a56d-3f94b3fcda1b')};
+    strFormat : STRING := STRING#'{0:yyyy-MM-dd HH:mm:ss.fff}' { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779') } {Id('f1ed4af2-919d-4f5a-9599-68006d910b91')};
+    Test_ALM_1 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('920301f3-ff6c-411b-bc1f-e9aad93569e6')};
+    Test_ALM_2 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('f3c46f7e-b6f4-4ded-b0f2-7ab9f2ed02b0')};
+    Test_ALM_3 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('eff09e7c-cf28-4bdc-94b2-9a553468fd6f')};
+    Test_ALM_4 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('201ecaf4-39be-49f9-8a4a-4af3343033a9')};
+    Test_ALM_5 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('5d7cd89c-4f23-465f-8e3c-bd69b2222bfe')};
+    Test_ALM_6 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('49bb962a-15fd-4a78-96a4-bafef87b5a6a')};
+    Test_ALM_7 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('f9c279f7-560e-43bd-8333-4f1c85e52f1e')};
+    Test_ALM_8 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('e08a0462-cb8c-4551-8767-a29944a60b26')};
+    Test_ALM_9 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('82394b02-5134-4232-a79a-9829c43675ff')};
+    Test_ALM_10 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('c6da3c0e-7659-499a-9a8a-3c84c2b49102')};
+    Test_ALM_11 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('2fac4fdc-8c6e-42cf-b747-1824ce30d05d')};
+    Test_ALM_12 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('e302241e-e690-4431-a524-e683eb85d24a')};
+    Test_ALM_13 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('fc4a3147-34fc-414b-b16b-91439ec055ca')};
+    Test_ALM_14 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('2b6c342b-8ece-4409-9432-410ee7a3355b')};
+    Test_ALM_15 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('e2a87847-8ad4-45bb-a023-1a11da8de6b5')};
+    Test_ALM_16 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('144459e3-2882-4b27-9cde-85cf9ee031b0')};
+    Test_ALM_17 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('c24cf553-dec0-453d-8b0b-7ba918e65666')};
+    Test_ALM_18 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('e63bcb80-1b15-421c-87df-ebbb80e212c4')};
+    Test_ALM_19 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('a86f57b1-5f28-4c8a-aae0-fdeec82d9099')};
+    Test_ALM_20 : BOOL { CustomGroupReference('a04e0da4-75a3-431c-a769-2ffcda83b779'), EHMI } {Id('c5e78948-cf41-4df4-9cd3-476679f0a25d')};
+END_VAR
